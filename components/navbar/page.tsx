@@ -1,11 +1,19 @@
 'use client'
 
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import logo from '/public/nav_logo_new.png'
 import { marker } from '@/app/fonts'
 
 export default function page() {
+
+  const hiddenLinks: String = "h-16 overflow-hidden"
+  const shownLinks: String = ""
+
+  const [navState,setNavState] = useState(hiddenLinks)
+
+  
+
   return (
     <div className='w-screen absolute flex flex-col lg:flex-row justify-center items-between lg:justify-between lg:items-center h-fit lg:h-20 bg-bill-cyan shadow-md'>
       
@@ -15,10 +23,11 @@ export default function page() {
         </div>
       
         <div className='lg:hidden w-full items-center flex justify-between px-4'>
-          <div>
-            <div className='h-12 w-12 border-solid border-2 border-slate-500 rounded'>
+          <div id="overflow" className={`${hiddenLinks}`}>
+            <div className='h-12 w-12 border-solid border-2 border-slate-500 rounded' onClick={() => console.log("wasd")}>
               
             </div>
+
             <div className='lg:hidden flex flex-col text-xl py-4'>
             <div className='mx-6 my-1'>Home</div>
             <div className='mx-6 my-1'>Store</div>
