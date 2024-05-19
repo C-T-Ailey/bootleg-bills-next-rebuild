@@ -22,6 +22,7 @@ const config: Config = {
       },
       transitionProperty: {
         'top': 'top',
+        'bottom': 'bottom',
         'height': 'height',
       }
     },
