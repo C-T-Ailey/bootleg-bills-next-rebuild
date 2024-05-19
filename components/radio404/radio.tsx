@@ -1,3 +1,4 @@
+'use client'
 import React, { useState, useEffect } from 'react'
 import { hairline } from '@/app/fonts'
 import '@/components/radio404/radio.css'
@@ -40,9 +41,9 @@ export default function page() {
             <div>
                 <i className="bi bi-volume-mute text-4xl mx-2"></i>
             </div>
-            <div className={`${hairline.className} text-2xl font-semibold marquee w-56 `}>
+            <div className={`${hairline.className} text-2xl marquee w-56 `}>
                 <ul className='marquee__content'>
-                    <li>
+                    <li className='font-semibold'>
                         Bootleg Bill's Unofficial Audio Rarities 
                     </li>
                     <li className='text-3xl'>
@@ -51,7 +52,7 @@ export default function page() {
                 </ul>
 
                 <ul aria-hidden='true' className='marquee__content'>
-                    <li>
+                    <li className='font-semibold'>
                         Bootleg Bill's Unofficial Audio Rarities 
                     </li>
                     <li className='text-3xl'>

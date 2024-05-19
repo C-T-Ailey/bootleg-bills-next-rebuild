@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Navbar from '../components/navbar/page'
+import Navbar from '../components/navbar/navbar'
 import { inter, bungee, hairline, marker } from "./fonts";
 import "./globals.css";
 import 'bootstrap-icons/font/bootstrap-icons.css'
@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={bungee.className}>
-        <Navbar></Navbar>
+        {/* <Navbar></Navbar> */}
         {children}
       </body>
     </html>
