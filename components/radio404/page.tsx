@@ -2,9 +2,11 @@ import React, { useState, useEffect } from 'react'
 
 export default function page() {
 
-    const [visible, setVisible] = useState(true)
+    const [visible, setVisible] = useState(false)
 
     const [expanded, setExpanded] = useState(false)
+
+    const [tab, setTab] = useState(false)
 
     const toggle = () => {
         setVisible(!visible);
@@ -15,6 +17,10 @@ export default function page() {
 
     const expand = () => {
         setExpanded(!expanded)
+    }
+
+    const concealTab = () => {
+        setTab(!tab)
     }
 
     return (
@@ -31,7 +37,7 @@ export default function page() {
             </div>
         </div>
         <div className='relative w-80 h-4 flex justify-center' onClick={() => toggle()}>
-            <div className='w-20 rounded-b bg-bill-magenta shadow-[-2px_2px_6px_rgb(36,36,36)]'></div>
+            <div className='relative w-20 rounded-b bg-bill-magenta shadow-[-2px_2px_6px_rgb(36,36,36)] '></div>
         </div>
     </div>
   )
