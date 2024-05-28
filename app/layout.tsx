@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Navbar from '../components/navbar/page'
 import { inter, bungee, hairline, marker } from "./fonts";
 import "./globals.css";
+import 'bootstrap-icons/font/bootstrap-icons.css'
 
 
 

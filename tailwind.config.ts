@@ -19,7 +19,11 @@ const config: Config = {
           'yellow':'#f8dd35ff',
           'magenta':'#ff2273ff',
         },
-
+      },
+      transitionProperty: {
+        'top': 'top',
+        'bottom': 'bottom',
+        'height': 'height',
       }
     },
   },
